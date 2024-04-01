@@ -49,12 +49,13 @@ header {
 
 .card-content {
   width: 400px;
-  height: 400px;
+  height: 350px;
   background-color: orange;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 30px;
+  border-bottom: 2px solid white;
 }
 
 .weather-icon {
@@ -100,19 +101,46 @@ header {
 
 /* Footer */
 
-.card-footer {}
-
-.details {}
+.card-footer {
+  width: 400px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
 /* Feels like */
 
-.col-left {}
+.col-left {
+  display: flex;
+  flex-direction: column;
+  background-color: orange;
+  width: 200px;
+  padding: 20px 0 0 80px;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  border-right: 2px solid white;
+  border-radius: 0 0 0 10px;
+
+
+}
 
 .number-2 {}
 
 /* Humidity*/
 
-.col-right {}
+.col-right {
+  display: flex;
+  flex-direction: column;
+  background-color: orange;
+  width: 200px;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 20px 0 0 80px;
+  border-radius: 0 0 10px 0;
+}
 
 .number-2 {}
 
