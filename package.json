@@ -1,0 +1,12 @@
+{
+  "name": "weather_app",
+  "version": "1.0.0",
+  "description": "Application météo pour les transports en commun ",
+  "main": "index.html", 
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AndyRama/weather_app.git"
+  },
+  "author": "Andy ramaroson",
+  "license": "ISC"
+}
