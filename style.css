@@ -58,21 +58,45 @@ header {
 }
 
 .weather-icon {
-  height: 100px;
-  width: 60px;
+  width: 50%;
+  height: 120px;
 }
 
-.temp {}
+.temp {
+  color: white;
+  font-size: 64px;
+  font-weight: 400;
+}
 
-.number {}
+.number {
+  margin-top: 8px;
+  color: white;
+  font-size: 64px;
+  font-weight: 400;
+}
 
-.weather-description {}
+.weather-description {
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+}
 
-.location {}
+.location {
+  margin-top: 8px;
+  color: white;
+}
 
-.city {}
+.city {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
 
-.country {}
+.country {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
 
 /* Footer */
 
