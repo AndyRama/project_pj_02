@@ -10,10 +10,61 @@
     <title>Weather Application web</title>
   </head>
   <body>
-    <h1>Test weather app</h1>  
 
     <!-- Create weather input for select city [must have - feature 1] --> 
+    <header>Weather App</header>
 
+      <section class="card-header">
+        <input 
+          type="text"
+          placeholder="Entrer le nom d'une ville"
+          required
+          />
+        <button>
+          <img src="images/search.png" alt="search icon "></button>
+      </section>
+
+      <section class="card-content">
+        <img src="images/sun.svg" class="weather-icon" alt="image sun and cloud">
+        <div class="temp">
+          <span class="number">22</span>
+          <span class="deg">°</span>C
+        </div>
+        <div class="weather-description">clear</div>
+        <div class="location">
+          <!-- icon map -->
+          <span class="city">Bordeaux </span>
+          <span>,</span>
+          <span class="country">FR</span>
+        </div>
+
+      </section>
+
+      <section class="card-footer">
+        <div class="details">
+
+          <div class="col-left">
+            <!-- icon termo -->
+            <div class="temp">
+              <span class="number-2">20</span>
+              <span class="deg">°</span>C
+            </div>
+            <p>Feels like</p>
+          </div>
+
+          <div class="col-right">
+            <!-- icon water -->
+            <div class="humidity">
+              <span class="number-2">58</span>
+              <span class="taux">%</span>
+            </div>
+            <p>Feels like</p>
+          </div>
+          </div>
+        </div>
+      </section>
+
+  
     <!-- Create file data city in config.js [sould have] -->
 
     <!-- Create weather card display information (json) with a correct city selected [must have - feature 2] -->
