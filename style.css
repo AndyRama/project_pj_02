@@ -13,3 +13,83 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 75vh;
+}
+
+header {
+  display: flex;
+  height: 70px;
+  width: 400px;
+  background-color: orange;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 500;
+  color: white;
+  border-radius: 10px 10px 0 0;
+  border-bottom: 2px solid white;
+  padding-left: 50px;
+  margin-top: 90px;
+}
+
+
+/* Header */
+.card-header {
+  width: 400px;
+  background-color: red;
+  display: none;
+}
+
+/* Content */
+
+.card-content {
+  width: 400px;
+  height: 400px;
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.weather-icon {
+  height: 100px;
+  width: 60px;
+}
+
+.temp {}
+
+.number {}
+
+.weather-description {}
+
+.location {}
+
+.city {}
+
+.country {}
+
+/* Footer */
+
+.card-footer {}
+
+.details {}
+
+/* Feels like */
+
+.col-left {}
+
+.number-2 {}
+
+/* Humidity*/
+
+.col-right {}
+
+.number-2 {}
+
+.taux {}
