@@ -168,25 +168,23 @@ header {
   width: 400px;
   height: 100px;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 /* Feels like */
 
 
 .map-icon {
-  position: fixed;
-  bottom: 320px;
-  color: white;
+  /* position: relative; */
+  /* bottom: 320px; */
+  color: red;
   font-size: 40px;
 }
 
-#icon-thermo {
-  padding-left: 30px;
-}
+
 
 #icon-water {
-  padding-left: 230px;
+  /* padding-left: 230px; */
 }
 
 .col-left {
@@ -214,10 +212,18 @@ header {
   color: white;
   font-weight: 500;
   font-size: 18px;
-  padding: 20px 0 0 80px;
+  padding: 20px 0 0 20px;
   border-radius: 0 0 10px 0;
+}
+
+.humidity i {
+  margin-right: 30px;
+  font-size: 50px;
 }
 
 .number-2 {}
 
-.taux {}
+.humidity p {
+  width: auto;
+  text-align: center;
+}
