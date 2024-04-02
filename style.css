@@ -46,7 +46,7 @@ header {
   padding: 40px 40px;
   background-color: orange;
   border-bottom: 2px solid white;
-  display: none;
+  /* display: none; */
 }
 
 #search-bar {
@@ -66,7 +66,7 @@ header {
   border: 2px solid #f2f2f2;
   padding-left: 5px;
   border: 0;
-  border-radius: 10px 0 0 10px;
+  /* border-radius: 10px 0 0 10px; */
 }
 
 #search-input::placeholder {
@@ -159,71 +159,4 @@ header {
   color: white;
   font-size: 20px;
   font-weight: 500;
-}
-
-/* Footer */
-
-.card-footer {
-  display: flex;
-  width: 400px;
-  height: 100px;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-/* Feels like */
-
-
-.map-icon {
-  /* position: relative; */
-  /* bottom: 320px; */
-  color: red;
-  font-size: 40px;
-}
-
-
-
-#icon-water {
-  /* padding-left: 230px; */
-}
-
-.col-left {
-  display: flex;
-  flex-direction: column;
-  background-color: orange;
-  width: 200px;
-  padding: 20px 0 0 80px;
-  color: white;
-  font-size: 18px;
-  font-weight: 500;
-  border-right: 2px solid white;
-  border-radius: 0 0 0 10px;
-}
-
-.number-2 {}
-
-/* Humidity*/
-
-.col-right {
-  display: flex;
-  flex-direction: column;
-  background-color: orange;
-  width: 200px;
-  color: white;
-  font-weight: 500;
-  font-size: 18px;
-  padding: 20px 0 0 20px;
-  border-radius: 0 0 10px 0;
-}
-
-.humidity i {
-  margin-right: 30px;
-  font-size: 50px;
-}
-
-.number-2 {}
-
-.humidity p {
-  width: auto;
-  text-align: center;
 }
