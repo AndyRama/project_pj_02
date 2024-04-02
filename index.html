@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link css -->
     <link rel="stylesheet" href="style.css" />
-     <!-- Favicon -->
-     <link rel="icon" href="images/favicon.svg" />
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.svg" />
+    <!--Awesome Font CDN-->
+    <script src="https://kit.fontawesome.com/608ae6f496.js" crossorigin="anonymous"></script>
     <title>Weather Application web</title>
   </head>
   <body>
@@ -15,13 +17,21 @@
     <header>Weather App</header>
 
       <section class="card-header">
-        <input 
-          type="text"
-          placeholder="Entrer le nom d'une ville"
-          required
-          />
-        <button>
-          <img src="images/search.png" alt="search icon "></button>
+        <form id="search-bar">
+          <div class="map-img">
+            <div id="map-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+          </div>
+          <div id="map-input">
+            <input type="search" id="search-input" placeholder="Entrer le nom d'une ville"/>
+          </div>
+          <div id="map-btn">
+            <button id="map-marker">
+              <span id="search-icon"><i class="fas fa-search"></i></span>
+            </button>
+          </div>
+        </form>
       </section>
 
       <section class="card-content">
@@ -41,27 +51,24 @@
       </section>
 
       <section class="card-footer">
-        <!-- <div class="details"> -->
 
-          <div class="col-left">
-            <!-- icon termo -->
-            <div>
-              <span class="number-2">20</span>
-              <span >°</span>C
-            </div>
-            <p>Feels like</p>
+        <div class="col-left">
+          <div class="feel">
+            <i class="fas fa-thermometer-half"></i>
+            <span class="number-2">20</span>
+            <span >°</span>C
           </div>
+          <p>Feels like</p>
+        </div>
 
-          <div class="col-right">
-            <!-- icon water -->
-            <div class="humidity">
-              <span class="number-3">58</span>
-              <span class="taux">%</span>
-            </div>
-            <p>Humidity</p>
+        <div class="col-right">
+          <div class="humidity">
+            <i class="fas fa-thin fa-droplet"></i>            
+            <span class="number-3">58</span>
+            <span class="taux">%</span>
           </div>
-          </div>
-        <!-- </div> -->
+          <p>Humidity</p>
+        </div>
       </section>
 
   
