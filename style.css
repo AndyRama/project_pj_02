@@ -46,6 +46,7 @@ header {
   padding: 40px 40px;
   background-color: orange;
   border-bottom: 2px solid white;
+  display: none;
 }
 
 #search-bar {
@@ -111,10 +112,10 @@ header {
 /* Content */
 
 .card-content {
+  display: flex;
   width: 400px;
   height: 350px;
   background-color: orange;
-  display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 30px;
@@ -165,14 +166,30 @@ header {
 /* Footer */
 
 .card-footer {
+  display: flex;
   width: 400px;
   height: 100px;
-  display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
 /* Feels like */
+
+
+.map-icon {
+  position: fixed;
+  bottom: 320px;
+  color: white;
+  font-size: 40px;
+}
+
+#icon-thermo {
+  padding-left: 30px;
+}
+
+#icon-water {
+  padding-left: 230px;
+}
 
 .col-left {
   display: flex;
