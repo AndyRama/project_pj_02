@@ -9,12 +9,15 @@
     <link rel="icon" href="images/favicon.svg" />
     <!--Awesome Font CDN-->
     <script src="https://kit.fontawesome.com/608ae6f496.js" crossorigin="anonymous"></script>
-    <title>Weather Application web</title>
+    <title>Weather App </title>
   </head>
   <body>
 
     <!-- Create weather input for select city [must have - feature 1] --> 
-    <header>Weather App</header>
+    <header>
+        <i class="header-arrow fas fa-arrow-left" id="back"></i>
+      Weather App
+    </header>
 
       <div class="card-header">
         <form id="search-bar">
@@ -38,15 +41,16 @@
       <div class="card-content">
         <img src="images/sun.svg" class="weather-icon" alt="image sun">
         <div class="temp">
-          <span class="number">22</span>
+          <span class="number">32</span>
           <span>°</span>C
         </div>
-        <div class="weather-description">clear sky</div>
+        <div class="weather-description">Clear sky</div>
         <div class="location">
           <!-- icon map -->
-          <span class="city">Bordeaux</span>
+          
+          <span class="city"><i class="fas fa-map-marker-alt"></i> Bordeaux</span>
           <span>,</span>
-          <span class="country">FR</span>
+          <span class="country">Fr</span>
         </div>
         <div class="card-footer">
           <div class="col">
