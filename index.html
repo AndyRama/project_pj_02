@@ -13,13 +13,13 @@
   </head>
   <body>
 
-    <!-- Create weather input for select city [must have - feature 1] --> 
+    <!-- Create weather input for select city [must have - feature 1 - ok] --> 
     <header>
         <i class="header-arrow fas fa-arrow-left" id="back"></i>
       Weather App
     </header>
 
-      <div class="card-header">
+      <section class="card-header">
         <form id="search-bar">
         <!-- btn geoloc -->
           <div class="map-img">
@@ -27,53 +27,70 @@
               <i class="fas fa-map-marker-alt"></i>
             </div>
           </div>
+          <!-- search input -->
           <div id="map-input">
-            <input type="search" id="search-input" placeholder="Entrer le nom d'une ville"/>
+            <input type="search" id="search-input" placeholder="Enter city Name"/>
           </div>
+          <!-- btn submit -->
           <div id="map-btn">
             <button id="map-marker">
               <span id="search-icon"><i class="fas fa-search"></i></span>
             </button>
           </div>
         </form>
-      </div>
+      </section>
 
-      <div class="card-content">
+      <section class="card-content">
+        <!-- info weather | icon -->
         <img src="images/sun.svg" class="weather-icon" alt="image sun">
         <div class="temp">
+          <!-- info weather | temp -->
           <span class="number">32</span>
           <span>°</span>C
         </div>
+
+        <!-- info weather | description -->
         <div class="weather-description">Clear sky</div>
+        <!-- location info | City -->          
         <div class="location">
-          <!-- icon map -->
-          
           <span class="city"><i class="fas fa-map-marker-alt"></i> Bordeaux</span>
           <span>,</span>
+          <!-- location info | Country -->  
           <span class="country">Fr</span>
         </div>
+
         <div class="card-footer">
           <div class="col">
+            <!-- Fell like info | icon -->  
             <img src="images/thermo.png" alt="temperature">
             <div>
+              <!-- Fell like info | temp --> 
               <p class="thermo">20°C</p>
-              <p>Feel Like</p>
+              <!-- Fell like info | description --> 
+              <p>Feel Likes</p>
             </div>
           </div>
+
           <div id="separator"></div>
+
           <div class="col">
+            <!-- humidity info | icon --> 
             <img src="images/water.png" alt="water drop">
             <div>
+              <!-- humidity info | value --> 
               <p class="humidity">50%</p>
+              <!-- humidity info | description --> 
               <p>Humidity</p>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <section class="footer">
+        <p>Made with ❤️ by <a href="https://github.com/AndyRama" target="_blank">Andy Ramaroson</a></p>
+      </section>
 
   
-    <!-- Create file data city in config.js [sould have] -->
-
     <!-- Create weather card display information (json) with a correct city selected [must have - feature 2] -->
 
     <!-- Update weather card display information with a dynamique data-city come from Openweather Api [must have - feature 3] -->

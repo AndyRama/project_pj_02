@@ -207,3 +207,10 @@ header {
   width: 100px;
   margin-left: 20% !important;
 }
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 20px
+}
