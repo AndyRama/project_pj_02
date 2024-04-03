@@ -9,9 +9,14 @@ async function checkWeather() {
     const data = await response.json();
     console.log(data);
 
-    document.querySelector(".city").innerHTML = data.name
-    document.querySelector(".country").innerHTML = data.sys.country
-
+    document.querySelector(".weather-icon").innerHTML = data.weather[0].main // Weather-icon
+    document.querySelector(".temp").innerHTML = data.main.temp // Temperature
+    document.querySelector(".weather-description").innerHTML = data.weather[0].description // Weather-description
+    document.querySelector(".city").innerHTML = data.name // City
+    document.querySelector(".country").innerHTML = data.sys.country // Country
+    document.querySelector(".thermo").innerHTML = data.main.feels_like // Fells like
+    document.querySelector(".humidity").innerHTML = data.main.humidity// Humidity
+    
   } catch (error) {
     console.error('Error fetching weather data:', error);
   }
