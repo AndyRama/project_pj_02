@@ -63,7 +63,7 @@ function convertCountryCode(country){
 }
 
 function getWeather(){
-  const API_KEY = "8a523a3e5ce017e811d6428ebd188062"
+  const API_KEY = ""
 
   fetch(`https://api.openweathermap.org/data/2.5/weather?q=${currCity}&appid=${API_KEY}&units=${units}`).then(res => res.json()).then(data => {
       console.log(data)
@@ -79,7 +79,7 @@ function getWeather(){
 function getImage(city) {
   // let search = document.querySelector(".weather__searchform");
   city = "Bordeaux";
-  const UNSPLASH_ACCESS_KEY = "pVhGKm-YP9UgYu7d1H3yiOkaSDVrKrMjf8E7cykMJp0"
+  const UNSPLASH_ACCESS_KEY = ""
 
   fetch(`https://api.unsplash.com/search/photos?query=${city}&client_id=${UNSPLASH_ACCESS_KEY}`)
     .then(response => response.json())
