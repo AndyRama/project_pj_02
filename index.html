@@ -8,86 +8,55 @@
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.svg" />
     <!--Awesome Font CDN-->
-    <script src="https://kit.fontawesome.com/608ae6f496.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a692e1c39f.js" crossorigin="anonymous"></script>
     <title>Weather App </title>
   </head>
   <body>
+    <div class="container">
+      <div class="header">
+        <i class="header-arrow fas fa-arrow-left"></i>
+        <h1>Weather App</h1>
+      </div>
+      <div class="weather__header">
+          <form action="search" class="weather__search">
+            <i class="fas fa-map-marker-alt"></i>
+            <input type="text" class="weather__searchform" placeholder="Enter the name of city">              
+            <button>search</button>
+          </form>
+      </div>
 
-    <!-- Create weather input for select city [must have - feature 1 - ok] --> 
-    <header>
-        <i class="header-arrow fas fa-arrow-left" id="back"></i>
-      Weather App
-    </header>
-
-      <section class="card-header">
-        <form id="search-bar">
-        <!-- btn geoloc -->
-          <div class="map-img">
-            <div id="map-icon">
-              <i class="fas fa-map-marker-alt"></i>
-            </div>
-          </div>
-          <!-- search input -->
-          <div id="map-input">
-            <input type="search" id="search-input" placeholder="Enter city Name"/>
-          </div>
-          <!-- btn submit -->
-          <div id="map-btn">
-            <button id="map-marker">
-              <span id="search-icon"><i class="fas fa-search"></i></span>
-            </button>
-          </div>
-        </form>
-      </section>
-
-      <section class="card-content">
-        <!-- info weather | icon -->
+      <div class="weather__body">
         <img src="images/sun.svg" class="weather-icon" alt="image sun">
-        <div>
-          <!-- info weather | temp -->
-          <span class="temp"></span>
-          <span class="celsius">°C</span>
-          
-        </div>
-
-        <!-- info weather | description -->
-        <div class="weather-description">Clear sky</div>
-        <!-- location info | City -->          
+        <p class="weather__temperature">32&#176c</p>
+        <p class="weather__description">_ _</p>
         <div class="location">
-          <span class="city"><i class="fas fa-map-marker-alt"></i>_</span>
-          <span>,</span>
-          <!-- location info | Country -->  
-          <span class="country">_ _</span>
+          <span class="weather__city">
+            <i class="fas fa-map-marker-alt"></i>
+            Bordeaux
+          </span>   
+          <span>,</span>       
+          <span class="weather__country">Fr</span>
         </div>
+        
+        <div class="weather__info">
 
-        <div class="card-footer">
-          <div class="col">
-            <!-- Fell like info | icon -->  
-            <img src="images/thermo.png" alt="temperature">
-            <div>
-              <!-- Fell like info | temp --> 
-              <p class="thermo">_ _</p>
-              <!-- Fell like info | description --> 
-              <p>Feel Likes</p>
-            </div>
+          <div class="weather__card">
+            <i id="icon-left" class=" fa-solid fa-temperature-full"></i>
+            <p class="weather__feels">12 &#176C</p>
+            <p>Fells Likes</p>
           </div>
 
-          <div id="separator"></div>
-
-          <div class="col">
-            <!-- humidity info | icon --> 
-            <img src="images/water.png" alt="water drop">
-            <div>
-              <!-- humidity info | value --> 
-              <p class="humidity">__</p>
-              
-              <!-- humidity info | description --> 
-              <p>Humidity</p>
-            </div>
+          <div class="separator"></div>
+  
+          <div class="weather__card">
+            <i class="fa-solid fa-droplet"></i>
+            <p class="weather__humidity">58 %</p>
+            <p>Humidity</p>
           </div>
+        <!-- </div>        -->
         </div>
-      </section>
-
+      </div>
+      
       <section class="footer">
         <p>Made with ❤️ by <a href="https://github.com/AndyRama" target="_blank">Andy Ramaroson</a></p>
       </section>
@@ -102,7 +71,7 @@
     <!-- Proposal update weather input with btn to display information with localisation position data city come from geoloc Api [Could have - feature 5] -->
     
     <!-- Proposal update weather card display information with a date and Hours under the name city [Could have - feature 6] --> 
-  <!-- <script src="js/config.js"></script> -->
-  <script src="js/météo.js"></script>
+    <!-- <script src="js/config.js"></script> -->
+    <script src="js/météo.js"></script>
   </body>
 </html>
